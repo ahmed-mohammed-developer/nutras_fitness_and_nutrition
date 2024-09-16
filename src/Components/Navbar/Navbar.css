@@ -1,5 +1,6 @@
 .navbar {
     padding-block: 1.5rem;
+    background-color: #fff;
 }
 .navbar-toggler:focus {
     box-shadow: none;

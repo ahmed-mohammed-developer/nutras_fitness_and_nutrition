@@ -1,0 +1,82 @@
+.home {
+    height: calc(100vh - 50px);
+    position: relative;
+}
+.home:before{
+    content: "";
+    position: absolute;
+    background: url("../../assets/images/slider/slider-2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.home-content{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.home-content h6 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #0a4d3c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.home-content h1 {
+    font-size: 80px;
+    line-height: 1;
+    margin-top: 1.6rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 0;
+    margin-bottom: 0;
+}
+@media (width < 992px) {
+    .home-content h1 {
+font-size: 64px;  
+  }
+}
+@media (width < 700px) {
+    .home-content h1 {
+font-size: 56px; 
+   }
+}
+@media (width < 600px) {
+    .home-content h1 {
+font-size: 36px; 
+   }
+}
+.home-content p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2c241b;
+    margin-top: 30px;
+}
+.view-deatlis-home-buttom{
+    background-color: #ffa300;
+    border-color: #ffa300;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    padding: 0 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    width: fit-content;
+    text-decoration: none;
+}
+.view-deatlis-home-buttom:hover{
+    background-color: #0a4d3c;
+    color: #fff;
+    transition-duration: 1s;
+}

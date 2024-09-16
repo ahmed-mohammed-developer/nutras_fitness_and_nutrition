@@ -1,0 +1,42 @@
+.navbar {
+    padding-block: 1.5rem;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+@media (width < 499px) {
+    .logoicon img{
+        width: 130px;
+    }
+}
+.collapse li {
+    padding: 0 0.5rem;
+}
+.nav-link {
+    transition: all 0.3s linear;
+}
+.nav-link:focus {
+    color: #ffa300;
+}
+.collapse li a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #2c241b;
+}
+.collapse li a:hover {
+    text-decoration: none;
+    color: #ffa300;
+}
+.offcanvas-body ul {
+    border-top: 1px solid rgba(10, 77, 60, 0.15);
+}
+.offcanvas-body ul li a {
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(10, 77, 60, 0.15);
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #2c241b;
+}
+.offcanvas-header .btn-close {
+    font-size: 1.5rem;
+}

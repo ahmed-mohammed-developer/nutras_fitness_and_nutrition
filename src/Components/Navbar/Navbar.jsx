@@ -2,11 +2,14 @@ import React from 'react';
 import { FaBars } from "react-icons/fa";
 import Logo from "../../assets/images/logo.png"
 import './Navbar.css'
+import Fade from 'react-reveal/Fade'
+
 
 
 const Navbar = () => {
   return (
     <div>
+              <Fade top>
       <nav className="navbar navbar-expand-lg  fixed-top">
         <div className="container">
           
@@ -67,6 +70,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      </Fade>
     </div>
   );
 }

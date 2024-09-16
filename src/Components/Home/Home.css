@@ -1,5 +1,5 @@
 .home {
-    height: calc(100vh - 50px);
+    height: 100%;
     position: relative;
 }
 .home:before{
@@ -16,7 +16,7 @@
     z-index: -1;
 }
 .home-content{
-    height: 90vh;
+    height: calc(100vh - 114px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,5 +78,51 @@ font-size: 36px;
 .view-deatlis-home-buttom:hover{
     background-color: #0a4d3c;
     color: #fff;
-    transition-duration: 1s;
+    transition: all 0.3s linear;
+}
+.social-wrapper {
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 1rem;
+}
+.social-wrapper p {
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 5px;
+    white-space: nowrap;
+    color: #2c241b;
+}
+@media (width < 500px) {
+    .social-wrapper p {
+        font-size: 14px; 
+   }
+}
+.social {
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+}
+.social li {
+    margin-left: 15px;
+    list-style: none;
+    width: 45px;
+    height: 45px;
+    line-height: 43px;
+    text-align: center;
+    border: 1px solid rgba(10, 77, 60, 0.15);
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media (width < 500px) {
+    .social li {
+        margin-left: 10px;
+        width: 35px;
+        height: 35px;
+        line-height: 33px;
+    }
+}
+.social li:hover {
+    background-color: #0a4d3c;
+    color: #fff;
+    transition: all 0.3s linear;
 }

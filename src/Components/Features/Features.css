@@ -1,5 +1,5 @@
 .features {
-    padding-block: 10rem;
+    padding-bottom: 5rem;
 }
 .features-wrapper {
 }
@@ -20,6 +20,7 @@
     overflow: hidden;
     z-index: 1;
     transition: all 0.3s linear;
+    transition-delay: 0.3s;
     font-size: 70px;
     color: #0a4d3c;
 }
@@ -39,8 +40,9 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #ffa300;
+    background-color: #0a4d3c;
     transition: all 0.3s linear;
+    transition-delay: 0.3s;
     z-index: -1;
 }
 @media (width < 500px) {
@@ -51,11 +53,12 @@
 .single-feature .feature-icon span::after {
     position: absolute;
     content: '';
+    bottom: -170px;
     left: 0;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #0a4d3c;
+    background-color: #ffa300;
     transition: all 0.3s linear;
     z-index: -1;
  }
@@ -81,8 +84,11 @@
 }
 .content-wer p {
     margin-top: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
 }
-.feature-content span {
+.feature-content .roww {
     width: 60px;
     height: 60px;
     line-height: 60px;
@@ -94,34 +100,44 @@
     border-radius: 50%;
     margin-top: 35px;
     position: relative;
-    outline: 0;
-    box-shadow: 0;
     cursor: pointer;
-    transition: all 0.3s linear;
     opacity: 0;
     visibility: hidden;
+    transition: all 0.3s linear;
 }
-@media (width > 500px) {
-    .feature-content span {
+@media (width < 500px) {
+    .feature-content .roww {
         opacity: 1;
         visibility: visible;
     }
     }
-.feature-content span:hover{
+.single-feature:hover .feature-content span{
     background-color: #0a4d3c;
 }
-.active .feature-icon  span,
-.feature-icon span:hover {
+ .active .feature-icon  span,
+.single-feature:hover .feature-icon span {
     transition-delay: 0;
     color: #fff;
 }
 .active .feature-icon  span::before,
-.feature-icon span:hover::before {
+.single-feature:hover .feature-icon span::before {
     transition-delay: 0;
     bottom: 0px;
 }
 .active .feature-icon  span::after,
-.feature-icon span:hover::after {
+.single-feature:hover .feature-icon span::after {
     transition-delay: 0.3s;
     bottom: -150px;
+}
+@media (width < 500px) {
+    
+.active .feature-icon  span::after,
+.single-feature:hover .feature-icon span::after {
+    bottom: -120px;
+}
+    }
+.active .feature-content .roww,
+.single-feature:hover .feature-content .roww {
+    opacity: 1;
+    visibility: visible;
 }

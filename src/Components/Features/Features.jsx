@@ -1,6 +1,10 @@
 import React from 'react'
 import { FaRunning } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { RiFlowerLine } from "react-icons/ri";
+import { GrRestroomWomen } from "react-icons/gr";
+
+
 import './Features.css'
 
 
@@ -14,14 +18,14 @@ const Features = () => {
             <div className="col-lg-4 col-md-6">
               <div className="single-feature">
                 <div className="feature-icon">
-                  <span><FaRunning  /></span>
+                  <span><GrRestroomWomen /></span>
                 </div>
                 <div className="feature-content">
                   <div className="content-wer">
-                    <h4 className='title'>Running Course</h4>
+                    <h4 className='title'>Women's Course</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis similique illum in quisquam et fugiat fuga consequuntur?</p>
                   </div>
-                  <span><FaArrowRightLong  /> </span>
+                  <span className='roww'><FaArrowRightLong  /> </span>
                 </div>
               </div>
             </div>
@@ -30,14 +34,14 @@ const Features = () => {
             <div className="col-lg-4 col-md-6">
               <div className="single-feature active">
                 <div className="feature-icon">
-                  <span><FaRunning  /></span>
+                  <span><RiFlowerLine /> </span>
                 </div>
                 <div className="feature-content">
                   <div className="content-wer">
-                    <h4 className='title'>Running Course</h4>
+                    <h4 className='title'>Basice Course</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis similique illum in quisquam et fugiat fuga consequuntur?</p>
                   </div>
-                  <span><FaArrowRightLong  /> </span>
+                  <span className='roww'><FaArrowRightLong  /> </span>
                 </div>
               </div>
             </div>
@@ -51,10 +55,10 @@ const Features = () => {
                 </div>
                 <div className="feature-content">
                   <div className="content-wer">
-                    <h4 className='title'>Running Course</h4>
+                    <h4 className='title'>Men's Course</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis similique illum in quisquam et fugiat fuga consequuntur?</p>
                   </div>
-                  <span><FaArrowRightLong  /> </span>
+                  <span className='roww'><FaArrowRightLong  /> </span>
                 </div>
               </div>
             </div>

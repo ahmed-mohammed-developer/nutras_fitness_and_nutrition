@@ -9,23 +9,22 @@ import Fade from 'react-reveal/Fade'
 const Navbar = () => {
   return (
     <div>
-              <Fade top>
       <nav className="navbar navbar-expand-lg  fixed-top">
         <div className="container">
-          
           <div className="logoicon">
             <img src={Logo} alt="logo" />
           </div>
           <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
           <FaBars size={30} />
           </button>
+          <Fade top>
           <div className="collapse navbar-collapse d-lg-flex" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about">About Us</a>
+                <a className="nav-link" href="#features">Features</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#course">All Course</a>
@@ -41,6 +40,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
+          </Fade>
           <div className="offcanvas offcanvas-start d-lg-none" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div className="offcanvas-header ms-auto">
               <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -51,7 +51,7 @@ const Navbar = () => {
                 <a className="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about">About Us</a>
+                <a className="nav-link" href="#features">Features</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#course">All Course</a>
@@ -70,7 +70,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      </Fade>
     </div>
   );
 }

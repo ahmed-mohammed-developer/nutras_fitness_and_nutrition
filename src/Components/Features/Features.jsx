@@ -3,6 +3,8 @@ import { FaRunning } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { RiFlowerLine } from "react-icons/ri";
 import { GrRestroomWomen } from "react-icons/gr";
+import Fade from 'react-reveal/Fade'
+
 
 
 import './Features.css'
@@ -15,6 +17,7 @@ const Features = () => {
       <div className="container">
         <div className="features-wrapper">
           <div className="row">
+          <Fade left>
             <div className="col-lg-4 col-md-6">
               <div className="single-feature">
                 <div className="feature-icon">
@@ -29,8 +32,10 @@ const Features = () => {
                 </div>
               </div>
             </div>
+            </Fade>
 
 
+            <Fade top>
             <div className="col-lg-4 col-md-6">
               <div className="single-feature active">
                 <div className="feature-icon">
@@ -45,9 +50,10 @@ const Features = () => {
                 </div>
               </div>
             </div>
+            </Fade>
 
 
-
+            <Fade right>
             <div className="col-lg-4 col-md-6">
               <div className="single-feature">
                 <div className="feature-icon">
@@ -62,6 +68,7 @@ const Features = () => {
                 </div>
               </div>
             </div>
+            </Fade>
           </div>
         </div>
       </div>

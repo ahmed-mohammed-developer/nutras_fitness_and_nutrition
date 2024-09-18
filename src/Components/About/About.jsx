@@ -3,6 +3,8 @@ import './About.css'
 import Shap from '../../assets/images/shape/shape-2.png'
 import Aboutimg from '../../assets/images/about.jpg'
 import Shap1 from '../../assets/images/shape/shape-1.png'
+import Fade from 'react-reveal/Fade'
+
 
 
 
@@ -12,6 +14,7 @@ const About = () => {
       <div className="container">
         <div className="about-wra">
             <div className="row align-items-center">
+            <Fade left>
                 <div className="col-lg-5">
                     <div className="about-img">
                         <img src={Shap} alt="shap" className='shape' />
@@ -23,6 +26,8 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+                </Fade>
+                <Fade right>
                 <div className="col-lg-7">
                     <div className="about-content bg-white">
                         <img src={Shap1} alt="shap" />
@@ -35,6 +40,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+                </Fade>
             </div>
         </div>
       </div>

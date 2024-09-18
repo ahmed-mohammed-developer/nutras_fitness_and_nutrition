@@ -1,9 +1,28 @@
 .courses {
     padding-block: 5rem;
 }
+.section-title {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 25px 0;
+}
+.section-title::before {
+    position: absolute;
+    content: "";
+    background-image: url(../../assets/images/shape/shape-3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 120px;
+    height: 166px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
 .section-title .sub-title {
     font-family: "Montserrat", serif;
-    text-align: center;
     font-size: 14px;
     font-weight: 700;
     color: #0a4d3c;
@@ -13,9 +32,86 @@
 }
 .section-title .main-title{
     font-family: "Playfair Display", serif;
-    text-align: center;
     font-size: 57px;
     margin-top: 23px;
     line-height: 1.1;
     color: #2c241b;
+}
+.single-courses {
+    margin-top: 50px;
+}
+.single-courses .courses-images a {
+    display: block;
+}
+.single-courses .courses-images a img {
+    width: 100%;
+}
+.single-courses .courses-price {
+    position: relative;
+    margin-top: -40px;
+    z-index: 1;
+}
+.single-courses .courses-content .courses-price .price {
+    display: block;
+    width: 80px;
+    height: 80px;
+    line-height: 76px;
+    border: 2px solid #f8f6f4;
+    border-radius: 50%;
+    background-color: #0a4d3c;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+}
+.content-wrapper {
+    padding: 30px 30px 25px;
+}
+.content-wrapper .author {
+    color: #9b9ea1;
+    font-weight: 500;
+}
+.content-wrapper .author a{
+    text-decoration: none;
+    color: #2c241b;
+}
+.content-wrapper h4 {
+    margin-top: 10px;
+}
+.content-wrapper h4 a {
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 1.1;
+    color: #2c241b;
+    font-weight: 500;
+}
+
+.content-wrapper .meta {
+    display: flex;
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.meta  li  {
+    color: #fea200;
+    font-size: 13px;
+    position: relative;
+}
+.meta li + li {
+    margin-left: 35px;
+}
+.meta li + li::before {
+    position: absolute;
+    content: "";
+    background-color: #0a4d3c;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
 }

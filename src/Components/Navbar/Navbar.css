@@ -12,10 +12,12 @@
 }
 .collapse li a{
     padding: 0 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #2c241b;
     cursor: pointer;
+    font-family: "Playfair Display", serif;
+
 }
 .nav-link {
     transition: all 0.3s linear;
@@ -36,10 +38,11 @@
 .offcanvas-body ul li a {
     padding: 10px 20px;
     border-bottom: 1px solid rgba(10, 77, 60, 0.15);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #2c241b;
     cursor: pointer;
+    font-family: "Playfair Display", serif;
 }
 .offcanvas-header .btn-close {
     font-size: 1.5rem;

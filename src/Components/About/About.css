@@ -23,7 +23,7 @@
 }
 @media (width < 500px) {
     .about-img .shape {
-        width: 100%;
+        width: 100px;
         left: -20px;
         top: -20px;
     }
@@ -45,6 +45,11 @@
     line-height: 40px;
     padding: 0 20px;
     font-size: 14px;
+    transition: all 0.3s linear;
+}
+.about-img:hover .about-btn .btnabout {
+    background-color: #0a4d3c;
+    border-color: #0a4d3c;
 }
 @keyframes spain-1 {
     to {
@@ -55,4 +60,55 @@
     padding: 100px 80px;
     margin-top: 50px;
     position: relative;
+}
+.about-content img {
+    position: absolute;
+    top: -30px;
+    right: 50px;
+}
+@media (width < 500px) {
+    .about-content img {
+        width: 110px;
+        left: -10px;
+        top: -20px;
+    }
+}
+.content-wrapper .sub-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0a4d3c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+.content-wrapper .main-title {
+    font-size: 57px;
+    margin-top: 23px;
+    font-family: "Playfair Display", serif;
+}
+@media (width < 500px) {
+    .content-wrapper .main-title {
+        font-size: 27px;
+    }
+}
+.content-wrapper .count {
+    font-size: 30px;
+    font-weight: 500;
+    color: #0a4d3c;
+    line-height: 1;
+    margin-top: 40px;
+    display: block;
+}
+@media (width < 500px) {
+    .content-wrapper .count {
+        font: 18px;
+    }
+}
+.content-wrapper p {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 1.75;
+    font-weight: 400;
+    color: #52565b;
 }

@@ -11,7 +11,7 @@ import './Features.css'
 
 const Features = () => {
   return (
-    <div className='features'>
+    <div className='features' id='features-id'>
       <div className="container">
         <div className="features-wrapper">
           <div className="row">

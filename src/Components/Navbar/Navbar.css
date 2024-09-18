@@ -10,8 +10,12 @@
         width: 130px;
     }
 }
-.collapse li {
+.collapse li a{
     padding: 0 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #2c241b;
+    cursor: pointer;
 }
 .nav-link {
     transition: all 0.3s linear;
@@ -20,9 +24,7 @@
     color: #ffa300;
 }
 .collapse li a {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #2c241b;
+   
 }
 .collapse li a:hover {
     text-decoration: none;
@@ -37,7 +39,11 @@
     font-size: 1.2rem;
     font-weight: 500;
     color: #2c241b;
+    cursor: pointer;
 }
 .offcanvas-header .btn-close {
     font-size: 1.5rem;
+}
+.nav-item .active-navItem {
+    color: #ffa300;
 }

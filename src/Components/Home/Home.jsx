@@ -13,7 +13,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div className='pt-5 home' id='#home'>
+    <div className='pt-5 home' id='home-id'>
       <div className='container'>
       <div className="home-content">
         <h6>Fitness & Nutrition</h6>

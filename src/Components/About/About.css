@@ -61,6 +61,11 @@
     margin-top: 50px;
     position: relative;
 }
+@media (width < 500px) {
+    .about-content {
+        padding: 0;
+    }
+}
 .about-content img {
     position: absolute;
     top: -30px;
@@ -68,9 +73,7 @@
 }
 @media (width < 500px) {
     .about-content img {
-        width: 110px;
-        left: -10px;
-        top: -20px;
+       display: none;
     }
 }
 .content-wrapper .sub-title {

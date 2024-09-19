@@ -6,23 +6,104 @@
 .testimonial .img1 {
     position: absolute;
     top: 100px;
-    left: 120px;
+    left: 50px;
 }
-@media (width < 500px) {
+@media (width < 984px) {
     .testimonial .img1 {
-        width: 140px;
-        left: 30px;
-        top: 50px;
+       display: none;
     }
 }
 .testimonial .img2 {
     position: absolute;
     top: 30%;
-    right: 16%;
+    right: 10%;
+}
+@media (width < 984px) {
+    .testimonial .img2 {
+        display: none;
+    }
+}
+.title-tes .sub-title {
+    color: #fea200;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.title-tes h2 {
+    color: #fff;
+    font-size: 57px;
+    margin-top: 23px;
+    list-style: 1.1;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+
+}
+.tes-wrapper {
+    max-width: 970px;
+    margin: 70px auto 0;
 }
 @media (width < 500px) {
-    .testimonial .img2 {
-        width: 57px;
-        right: 12%;
+    .tes-wrapper {
+        margin-top: 30px;
     }
+}
+.single-testimonal-author {
+    text-align: center;
+    padding: 0 15px;
+}
+@media (width < 500px) {
+    .single-testimonal-author {
+        padding: 0 15px;
+    }
+}
+.testimonal-author {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+.testimonal-author img {
+    width: 85px;
+    border-radius: 50%;
+}
+.icon-tes {
+    position: absolute;
+    font-size: 56px;
+    color: #fea200;
+    left: 20%;
+    transform: translateY(-50%);
+    bottom: -55px;
+    line-height: 1;
+}
+.single-testimonal-author p {
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+    color: #fff;
+    margin-top: 105px;
+}
+@media (width < 500px) {
+    .single-testimonal-author p{
+        font-size: 16px;
+    }
+}
+.single-testimonal-author .name {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 52px;
+}
+@media (width < 500px) {
+    .single-testimonal-author .name{
+        font-size: 24px;
+        margin-top: 32px;
+    }
+}
+.single-testimonal-author .designation {
+    font-size: 11px;
+    font-weight: 500;
+    color: #fea200;
+    display: block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
 }

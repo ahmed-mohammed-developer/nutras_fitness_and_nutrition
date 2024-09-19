@@ -1,0 +1,28 @@
+.testimonial {
+    background-color: #0a4d3c;
+    position: relative;
+    padding-block: 5rem;
+}
+.testimonial .img1 {
+    position: absolute;
+    top: 100px;
+    left: 120px;
+}
+@media (width < 500px) {
+    .testimonial .img1 {
+        width: 140px;
+        left: 30px;
+        top: 50px;
+    }
+}
+.testimonial .img2 {
+    position: absolute;
+    top: 30%;
+    right: 16%;
+}
+@media (width < 500px) {
+    .testimonial .img2 {
+        width: 57px;
+        right: 12%;
+    }
+}

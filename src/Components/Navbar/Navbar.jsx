@@ -42,6 +42,11 @@ const Navbar = () => {
                     Courses
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link activeClass='active' to='testimonial-id' spy={true} smooth={true} offset={-100} duration={100} className="nav-link">
+                  Testimonial
+                  </Link>
+                </li>
             </ul>
           </div>
           </Fade>
@@ -69,6 +74,11 @@ const Navbar = () => {
                 <li className="nav-item">
                   <Link activeClass='active' to='courses-id' spy={true} smooth={true} offset={-100} duration={100} className="nav-link">
                     Courses
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link activeClass='active' to='testimonial-id' spy={true} smooth={true} offset={-100} duration={100} className="nav-link">
+                  Testimonial
                   </Link>
                 </li>
               </ul>
